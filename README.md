@@ -22,7 +22,7 @@ DPI, Deep Packet Inspection
                                              \
                                               \
                                           
-                                    DPI --(3)-----  (4) CDN  Node  f.google.com/  
+                                    DPI --(3)--＋---  (4) CDN  Node  f.google.com/  
                                              
                                      |        /
                                      |       /
@@ -32,7 +32,9 @@ DPI, Deep Packet Inspection
                                          
                                     User  <-----(1)----->   DNS 解析源網址網域的 IP 位址
      
-     DPI 監聽到 http 請求有某特定 MP4 檔案檔案。
+     DPI 監聽到 http 請求有某特定 MP4 檔案檔案，並且將擷取來的封包資訊發送給 CDN 體系。
+     CDN 節點在快取中確定是否存在該檔案，如果使用者第一次發出此類檔案之請求，則 CDN 並未快取過該檔案，
+     並將未快取的結果回傳 DPI，DPI 方才通知源網站。
                                               
 
 
