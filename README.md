@@ -9,6 +9,32 @@ DPI, Deep Packet Inspection
 除了 Header 和 Metadata，尚能改變其 HTTP 方法中攜帶的 URL、Timestamp 欄位。此技術可以改變使用者造訪請求資料中的 URL 和 主機位址，將源網站的存取請求 redirect 指向 CDN。
 
 
+# 視訊請求示意圖
+
+
+                  源網址 119.147.157.135
+                  
+                                       \
+                                        \
+                                         \
+                                     (Cache Max Age Expires)
+                                            \
+                                             \
+                                              \
+                                          
+                                    DPI --(3)-----  (4) CDN  Node  f.google.com/  
+                                             
+                                     |        /
+                                     |       /
+                                    (2)     /
+                                     |     /
+                                     |    /
+                                         
+                                    User  <-----(1)----->   DNS
+                                             
+                                              
+
+
 # 視訊存取流程
 
 (1) 使用者開啟網頁網址，取得網頁內容。
