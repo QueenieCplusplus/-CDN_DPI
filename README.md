@@ -31,7 +31,8 @@ DPI, Deep Packet Inspection
                                      |    /
                                          
                                     User  <-----(1)----->   DNS 解析源網址網域的 IP 位址
-                                             
+     
+     DPI 監聽到 http 請求有某特定 MP4 檔案檔案。
                                               
 
 
