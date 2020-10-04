@@ -12,7 +12,7 @@ DPI, Deep Packet Inspection
 # 視訊請求示意圖
 
 
-                  源網址 119.147.157.135
+                  源網址 119.147.157.135 video.google.com/  
                   
                                        \
                                         \
@@ -30,7 +30,7 @@ DPI, Deep Packet Inspection
                                      |     /
                                      |    /
                                          
-                                    User  <-----(1)----->   DNS
+                                    User  <-----(1)----->   DNS 解析源網址網域的 IP 位址
                                              
                                               
 
